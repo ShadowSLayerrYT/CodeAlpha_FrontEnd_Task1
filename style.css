@@ -1,0 +1,65 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #333; /* Dark background */
+  color: #fff; /* Light text color for contrast */
+  margin: 0;
+  padding: 0;
+}
+
+.gallery-title {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.image-frame {
+  flex: 0 0 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-image {
+  max-width: 50%; /* Reduce the image size */
+  border: 5px solid #555; /* Darker border to match dark theme */
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adjusted shadow for dark background */
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background-color: #555; /* Darker button background */
+  color: #fff; /* Light button text */
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #777; /* Lighter button background on hover */
+}
+
+.image-frame:first-of-type {
+  display: flex;
+}
